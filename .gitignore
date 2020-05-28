@@ -1,0 +1,13 @@
+# IDE
+.vs
+.vscode
+.idea
+
+# dir
+node_modules
+dist
+es
+
+# file
+yarn.*
+package-lock.json

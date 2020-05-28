@@ -1,0 +1,9 @@
+# dir
+test
+node_modules
+
+# lock
+yarn.lock
+
+#
+.gitignore
