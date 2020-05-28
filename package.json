@@ -5,13 +5,14 @@
   "main": "dist/percentile.js",
   "module": "es/percentile.js",
   "types": "es",
+  "private": false,
   "repository": "https://github.com/YMaster/percentile.git",
   "scripts": {
     "test": "ava",
     "prebuild": "rimraf es && rimraf dist",
     "build": "tsc --outDir es && rollup -c",
     "postbuild": "npm run test",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "cz": "git-cz"
   },
   "lint-staged": {
