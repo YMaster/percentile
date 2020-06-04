@@ -1,6 +1,6 @@
 {
   "name": "@iusername/percentile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate a percentile for given array of values",
   "main": "dist/percentile.js",
   "module": "es/percentile.js",
