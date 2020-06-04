@@ -12,7 +12,12 @@
     "prebuild": "rimraf es && rimraf dist",
     "build": "tsc --outDir es && rollup -c",
     "postbuild": "npm run test",
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
+    "release": "standard-version",
+    "release:first": "standard-version --first-release",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:minor": "standard-version  --release-as minor",
+    "release:noverify": "standard-version --no-verify",
     "cz": "git-cz"
   },
   "lint-staged": {
@@ -69,6 +74,7 @@
     "pre-commit": "^1.2.2",
     "rimraf": "^3.0.2",
     "rollup": "^2.11.0",
+    "standard-version": "^8.0.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.3"
   }
