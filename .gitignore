@@ -11,3 +11,4 @@ es
 # file
 yarn.*
 package-lock.json
+yarn-error.log

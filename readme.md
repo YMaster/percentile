@@ -29,7 +29,7 @@ const data = [2, 3, 5, 5, 5, 7, 20, 21]
 var res = percentile.incsOnce(data, [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 // res: [2, 2.7, 3.8, 5, 5, 5, 5.4, 6.8, 14.8, 20.3, 21]
 
-var res = percentile.incsOnce(data, 90)
+var res = percentile.incOnce(data, 90)
 // res: 20.3
 ```
 **需要多次求值时，可以通过初始化时传入 data 或者 init(data) 来缓存处理好的 data 数据减少每次求职所耗时间**
@@ -102,4 +102,4 @@ Percentile.help()
 [PERCENTILE 函数](https://support.office.com/zh-cn/article/percentile-%E5%87%BD%E6%95%B0-91b43a53-543c-4708-93de-d626debdddca)
 
 # License
-MIT License
+[MIT](https://opensource.org/licenses/MIT)
