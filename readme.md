@@ -15,7 +15,8 @@ yarn add @iusername/percentile
 ```js
 // node
 const Percentile = require('@iusername/percentile')
-// broswer
+
+// ES Module
 import Percentile from '@iusername/percentile'
 ```
 
@@ -32,7 +33,7 @@ var res = percentile.incsOnce(data, [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 var res = percentile.incOnce(data, 90)
 // res: 20.3
 ```
-**需要多次求值时，可以通过初始化时传入 data 或者 init(data) 来缓存处理好的 data 数据减少每次求职所耗时间**
+**需要多次求值时，可以通过初始化时传入 data 或者 init(data) 来缓存处理好的 data 数据减少每次求值所耗时间**
 ```js
 const data = [2, 3, 5, 5, 5, 7, 20, 21]
 

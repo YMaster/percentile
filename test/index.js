@@ -1,5 +1,5 @@
 const test = require('ava')
-const Perentile = require('../dist/percentile')
+const Perentile = require('../commonjs/percentile')
 
 const test_data_1 = [2, 3, 5, 5, 5, 7, 20, 21]
 const test_data_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
